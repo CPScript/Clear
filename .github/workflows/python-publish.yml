@@ -8,17 +8,17 @@
 
 name: Upload Python Package
 
-on:
-  release:
+on: 
+  release: 2/20/24
     types: [published]
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  deploy: 
 
-    runs-on: ubuntu-latest
+    runs-on: linux, windows, termux
 
     steps:
     - uses: actions/checkout@v3
